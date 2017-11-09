@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="guncolor">#abe2fc</color>
+    <color name="green">#63CBB0</color>
 </resources>
