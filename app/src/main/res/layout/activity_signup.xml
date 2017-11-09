@@ -4,23 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
     tools:context="com.example.kittaporn.iboxbox.Signup">
-
-    <TextView
-        android:id="@+id/signuptextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Signup"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#ffff"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -29,8 +21,9 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#fff"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -40,37 +33,84 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
+        android:layout_marginBottom="438dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="8dp"
         android:text="E-mail"
-        app:layout_constraintStart_toEndOf="@+id/signuptextView"
-        app:layout_constraintTop_toBottomOf="@+id/signuptextView" />
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="16dp"
         android:text="Password"
+        android:textColor="#FFF"
         app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/signupbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="59dp"
-        android:text="Signup"
-        app:layout_constraintStart_toEndOf="@+id/backbutton"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <Button
-        android:id="@+id/backbutton"
+        android:id="@+id/back_btn"
+        android:layout_width="24dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_left_chevron"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/accep_btn"
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="28dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_checked_symbol" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.09"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766"
+        app:srcCompat="@mipmap/ic_bonelogo" />
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:text="back"
-        app:layout_constraintBaseline_toBaselineOf="@+id/signupbutton"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginStart="40dp"
+
+        android:layout_marginTop="52dp"
+        android:text="Create your Account"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
